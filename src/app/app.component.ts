@@ -11,5 +11,5 @@ import { AppBodyComponent } from './components/app-body/app-body.component';
   imports: [AppHeaderComponent, AppHeaderComponent, AppSideBarComponent, AppFooterComponent, AppBodyComponent]
 })
 export class AppComponent {
-  title = 'ngTradingAlert';
+  title = 'ng-trading-alert';
 }

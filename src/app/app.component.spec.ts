@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'ngTradingAlert' title`, () => {
+  it(`should have the 'ng-trading-alert' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ngTradingAlert');
+    expect(app.title).toEqual('ng-trading-alert');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ngTradingAlert');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ng-trading-alert');
   });
 });
