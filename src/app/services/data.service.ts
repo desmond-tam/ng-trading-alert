@@ -19,4 +19,16 @@ export class DataService {
         })
     })
   }
+
+  public getAlerts():Observable<any> {
+    return new Observable(subscriber => {
+      this.http.get<any>('assets/data/alerts.json')
+        .subscribe((result:any) => {
+          subscriber.next(result);
+          subscriber.complete();
+        })
+    })
+  }
+
 }
+

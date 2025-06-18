@@ -1,0 +1,20 @@
+[
+    {
+        "badgeColor":"bg-danger",
+        "Date":"2025-06-03T04:00:00Z",
+        "ProductId":320,
+        "ProductDescription":"DOW-JONES-USD-COMBINED",
+        "Rule":"@today.open - @(today - 1).close < 50%",
+        "Diff":200.00,
+        "Open":42568.37
+    },
+    {
+        "badgeColor":"bg-info",
+        "Date":"2025-06-03T04:00:00Z",
+        "ProductId":330,
+        "ProductDescription":"USD-AUD",
+        "Rule":"@today.open - @(today - 1).close < 10%",
+        "Diff":0.01,
+        "Open":1.54
+    }
+]

@@ -1,0 +1,32 @@
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Alerts</h5>
+
+              <!-- Default Table -->
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Date (UTC)</th>
+                    <th scope="col">Product Id</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Rule</th>
+                    <th scope="col">Diff</th>
+                    <th scope="col">Open</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of list">
+                    <td><span class="badge {{item.badgeColor}}"><i class="bi bi-star me-1"></i>{{item.badgeText()}}</span></td>
+                    <td>{{item.Date}}</td>
+                    <td>{{item.ProductId}}</td>
+                    <td>{{item.ProductDescription}}</td>
+                    <td>{{item.Rule}}</td>
+                    <td>{{item.Diff}}</td>
+                    <td>{{item.Open}}</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- End Default Table Example -->
+            </div>
+          </div>
